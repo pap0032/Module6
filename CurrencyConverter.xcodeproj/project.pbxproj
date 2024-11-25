@@ -13,10 +13,12 @@
 		ACD1821A294227F700983320 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD18218294227F700983320 /* Main.storyboard */; };
 		ACD1821C294227F800983320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD1821B294227F800983320 /* Assets.xcassets */; };
 		ACD1821F294227F800983320 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD1821D294227F800983320 /* LaunchScreen.storyboard */; };
+		B6D034512CF4160D00FCAC0D /* ConvertedValuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D034502CF4160D00FCAC0D /* ConvertedValuesViewController.swift */; };
+		B6D034552CF4269800FCAC0D /* CurrencyConverterLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D034542CF4269800FCAC0D /* CurrencyConverterLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ACD1820F294227F700983320 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACD1820F294227F700983320 /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD18212294227F700983320 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACD18214294227F700983320 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ACD18216294227F700983320 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		ACD1821B294227F800983320 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACD1821E294227F800983320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACD18220294227F800983320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D034502CF4160D00FCAC0D /* ConvertedValuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertedValuesViewController.swift; sourceTree = "<group>"; };
+		B6D034542CF4269800FCAC0D /* CurrencyConverterLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +44,7 @@
 		ACD18206294227F700983320 = {
 			isa = PBXGroup;
 			children = (
-				ACD18211294227F700983320 /* HelloWorld */,
+				ACD18211294227F700983320 /* CurrencyConverter */,
 				ACD18210294227F700983320 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +52,49 @@
 		ACD18210294227F700983320 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ACD1820F294227F700983320 /* HelloWorld.app */,
+				ACD1820F294227F700983320 /* CurrencyConverter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ACD18211294227F700983320 /* HelloWorld */ = {
+		ACD18211294227F700983320 /* CurrencyConverter */ = {
 			isa = PBXGroup;
 			children = (
 				ACD18212294227F700983320 /* AppDelegate.swift */,
 				ACD18214294227F700983320 /* SceneDelegate.swift */,
-				ACD18216294227F700983320 /* ViewController.swift */,
+				B6D034532CF4267700FCAC0D /* Model */,
+				B6D034522CF4265D00FCAC0D /* View */,
 				ACD18218294227F700983320 /* Main.storyboard */,
 				ACD1821B294227F800983320 /* Assets.xcassets */,
 				ACD1821D294227F800983320 /* LaunchScreen.storyboard */,
 				ACD18220294227F800983320 /* Info.plist */,
 			);
-			path = HelloWorld;
+			path = CurrencyConverter;
+			sourceTree = "<group>";
+		};
+		B6D034522CF4265D00FCAC0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACD18216294227F700983320 /* ViewController.swift */,
+				B6D034502CF4160D00FCAC0D /* ConvertedValuesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6D034532CF4267700FCAC0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6D034542CF4269800FCAC0D /* CurrencyConverterLogic.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ACD1820E294227F700983320 /* HelloWorld */ = {
+		ACD1820E294227F700983320 /* CurrencyConverter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ACD18223294227F800983320 /* Build configuration list for PBXNativeTarget "HelloWorld" */;
+			buildConfigurationList = ACD18223294227F800983320 /* Build configuration list for PBXNativeTarget "CurrencyConverter" */;
 			buildPhases = (
 				ACD1820B294227F700983320 /* Sources */,
 				ACD1820C294227F700983320 /* Frameworks */,
@@ -82,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = HelloWorld;
+			name = CurrencyConverter;
 			productName = HelloWorld;
-			productReference = ACD1820F294227F700983320 /* HelloWorld.app */;
+			productReference = ACD1820F294227F700983320 /* CurrencyConverter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +124,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ACD1820A294227F700983320 /* Build configuration list for PBXProject "HelloWorld" */;
+			buildConfigurationList = ACD1820A294227F700983320 /* Build configuration list for PBXProject "CurrencyConverter" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ACD1820E294227F700983320 /* HelloWorld */,
+				ACD1820E294227F700983320 /* CurrencyConverter */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +163,8 @@
 				ACD18217294227F700983320 /* ViewController.swift in Sources */,
 				ACD18213294227F700983320 /* AppDelegate.swift in Sources */,
 				ACD18215294227F700983320 /* SceneDelegate.swift in Sources */,
+				B6D034512CF4160D00FCAC0D /* ConvertedValuesViewController.swift in Sources */,
+				B6D034552CF4269800FCAC0D /* CurrencyConverterLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HelloWorld/Info.plist;
+				INFOPLIST_FILE = CurrencyConverter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +339,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HelloWorld/Info.plist;
+				INFOPLIST_FILE = CurrencyConverter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -337,7 +361,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ACD1820A294227F700983320 /* Build configuration list for PBXProject "HelloWorld" */ = {
+		ACD1820A294227F700983320 /* Build configuration list for PBXProject "CurrencyConverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ACD18221294227F800983320 /* Debug */,
@@ -346,7 +370,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ACD18223294227F800983320 /* Build configuration list for PBXNativeTarget "HelloWorld" */ = {
+		ACD18223294227F800983320 /* Build configuration list for PBXNativeTarget "CurrencyConverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ACD18224294227F800983320 /* Debug */,
